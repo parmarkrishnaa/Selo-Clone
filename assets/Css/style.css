@@ -25,7 +25,7 @@
     --fw-800: 800;
     --fw-900: 900;
     --Lexend: 'Lexend';
-    --Lexend-Deca: 'Lexend-Deca';
+    --Lexend-Deca: 'Lexend Deca';
 }
 
 body{
@@ -33,16 +33,27 @@ body{
     color: var(--white-color);
     background-color: black;
     line-height: 1.5;
+    font-family: var(--Lexend-Deca);
 }
 
 .container{
     max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.container-fluid{
+    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
 }
 
 ul,ol{
@@ -51,11 +62,25 @@ ul,ol{
 
 a{
     text-decoration: none;
+    color: var(--white-color);
 }
 
 img{
     display: block;
     max-width: 100%;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-end{
+    justify-content: flex-end;
 }
 
 .col-1{
@@ -104,4 +129,46 @@ img{
 
 .col-12{
     width: 10%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* header start */
+
+header{
+    padding: 10px 0;
+}
+
+header .logo a h2{
+    font-family: var(--Lexend-Deca);
+}
+
+header .menu ul li a{
+    padding: 16px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: var(--fw-500);
+    transition: 0.5s;
+}
+
+header .menu ul li:last-child a{
+    padding: 9px 22px;
+    background-color: #212529;
+    border: 1px solid #ffffff80;
+    font-family: var(--Lexend-Deca);
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+header .menu ul li a:hover{
+    background: rgba(9, 31, 67, 0.04);
+    color: #6664e4;
+}
+
+header .menu ul li:last-child a:hover{
+    background: #ffffff;
+    color: #212529;
 }
