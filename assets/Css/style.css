@@ -9,6 +9,7 @@
     --secondary-color:linear-gradient(180deg, #282A36 0%, #2A2B3100 100%);
     --dark-color: #A9A4ABC7;
     --white-color: #ffff;
+    --text-color: #6664e4;
     --fs-16: 16px;
     --fs-64: 64px;
     --fs-18: 18px;
@@ -140,6 +141,9 @@ img{
 
 header{
     padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 header .logo a h2{
@@ -150,6 +154,7 @@ header .menu ul li a{
     padding: 16px 20px;
     border-radius: 8px;
     display: inline-block;
+    font-size: 16px;
     font-weight: var(--fw-500);
     transition: 0.5s;
 }
@@ -158,7 +163,6 @@ header .menu ul li:last-child a{
     padding: 9px 22px;
     background-color: #212529;
     border: 1px solid #ffffff80;
-    font-family: var(--Lexend-Deca);
     font-size: 15px;
     transition: 0.5s;
 }
@@ -172,3 +176,116 @@ header .menu ul li:last-child a:hover{
     background: #ffffff;
     color: #212529;
 }
+
+header .drop-down{
+    position: absolute;
+    border: 0;
+    border-radius: 0 0 8px 8px;
+    background-color: var(--white-color);
+    box-shadow: 0 0.5rem 1.875rem rgba(0, 0, 0, 0.15);
+    border-top: 2px solid var(--primary-color);
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    top: 110px;
+}
+
+header .drop-down ol li a{
+    display: block;
+    padding: 12px 22px 12px 22px;
+    color: #212529a7;
+}
+
+header .drop-down ol li:last-child a{
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+header .menu ul li .drop-down ol li:last-child:hover a{
+    background-color: rgba(137, 43, 226, 0.078);
+    color: var(--text-color);
+}
+
+header .drop-down ol li:hover a{
+    background-color: rgba(137, 43, 226, 0.078);
+    color: #000;
+}
+
+header .menu ul li:hover .drop-down{
+    opacity: 1;
+    visibility: visible;
+    top: 63px;
+}
+
+/* header end */
+
+/* banner start */
+
+.banner{
+    /* background-image: url(../Images/banner-background.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    position: relative;
+}
+
+.banner .banner-content{
+    padding: 80px;
+    position: relative;
+}
+
+.banner .banner-content .h1{
+    font-size: var(--fs-64);
+    font-family: var(--Lexend-Deca);
+    font-weight: var(--fw-500);
+    line-height: 1.2;
+}
+
+.banner .banner-content p{
+    padding: 20px 0;
+    color: var(--dark-color);
+    font-size: var(--fs-18);
+}
+
+.banner .banner-content p span{
+    color: var(--white-color);
+}
+
+.banner .banner-content a{
+    padding: 15px 40px;
+    background: var(--primary-color);
+    display: inline-block;
+    border-radius: 50px;
+    color: #000;
+    font-size: var(--fs-18);
+    font-weight: var(--fw-500);
+    font-family: var(--Lexend-Deca);
+    box-shadow: 19px 20px 60px 0px rgba(255, 165.99999999999991, 83.99999999999999, 0);
+}
+
+.banner .banner-content h1 .clip{
+    background-image: var(--primary-color);
+    background-clip: text;
+}
+
+.banner .banner-content h1 .clip span{
+    color: transparent;
+}
+
+.banner .banner-overlay{
+    background-image: url(../Images/banner-background2.png);
+    background-color: rgba(0, 0, 0, 0.121);
+    background-repeat: no-repeat;
+    background-size: 40% auto;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 170px;
+}
+
+.banner .banner-image img{
+    margin-top: 40px;
+}
+
+/* banner end */
