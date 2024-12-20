@@ -490,9 +490,7 @@ header .menu ul li:hover .drop-down{
 }
 
 .seo .seo-overlay{
-    /* background-image: url(../Images/38rfy.png); */
-    background-image: linear-gradient(180deg, #0e060600 0%, #3e4a6ea1 100%);
-
+    background-image: url(../Images/38rfy.png);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -561,47 +559,73 @@ header .menu ul li:hover .drop-down{
 
 /* seo-agency-start */
 
-.seo-agency .research .research-content p{
-    font-size: var(--fs-16);
-    font-weight: var(--fw-300);
-    line-height: 1.2;
+.award{
+    position: relative;
+    padding-bottom: 120px;
 }
 
-.seo-agency .research-content .people img{
+.award .award-overlay{
+    background-image: url(../Images/oval-2.png);
+    width: 100%;
+    height: 100%;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    bottom: 50px;
+    left: 300px;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.award-content{
+    color: #A9A4ABC7;
+    font-family: var(--Lexend-Deca);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.award .award-content h2{
+    font-family: var(--Lexend-Deca);
+    font-size: var(--fs-44);
+    font-weight: var(--fw-500);
+    line-height: 1.2;
+    color: var(--white-color);
+    padding: 30px 0;
+}
+
+.award .award-content h2 .clip{
+    background-image: var(--primary-color);
+    background-clip: text;
+}
+
+.award .award-content h2 .clip{
+    color: transparent;
+}
+
+.award .award-content .people{
+    padding-top: 30px;
+}
+
+.award .award-content p span{
+    color: var(--white-color);
+}
+
+.award .award-content .people img{
     width: 170px;
     margin-right: 10px;
 }
 
-.seo-agency .research .research-overlay{
-    background-image: url(../Images/banner-background2.png);
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: 45% auto;
-    width: 100%;
-    height: 80%;
-    left: 0;
-    background-position: 90% 45%;
-    opacity: 0.2;
-}
-.seo-agency .research .research-overlay-2{
-    background-image: url(../Images/38rfy.png);
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: 45% auto;
-    width: 80%;
-    height: 80%;
-    left: 0;
-    background-position: 100% 25%;
-    opacity: 0.2;
-}
-
-.seo-agency .research .star img{
+.award .star img{
     background-color: #EDB451;
     border-radius: 50%;
     border: 20px solid #EDB451;
     position: absolute;
-    right: 250px;
-    bottom: 100px;
+    right: 260px;
+    bottom: 120px;
     width: 130px;
 }
 
@@ -636,6 +660,12 @@ header .menu ul li:hover .drop-down{
 }
 
 .work-content{
+    color: #A9A4ABC7;
+    font-family: var(--Lexend-Deca);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 20px;
     padding-top: 20px;
 }
 
@@ -664,15 +694,6 @@ header .menu ul li:hover .drop-down{
     width: 40px;
 }
 
-.work .work-content{
-    color: #A9A4ABC7;
-    font-family: var(--Lexend-Deca);
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.2;
-    margin-top: 20px;
-}
-
 .work .work-content p{
     padding-bottom: 40px;
 }
@@ -698,11 +719,110 @@ header .menu ul li:hover .drop-down{
     padding: 0px 0px 20px 15px;
 }
 
+.work-2 .work-overlay{
+    background-image: url(../Images/oval-2.png);
+    width: 100%;
+    height: 100%;
+    background-size: 90% auto;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    position: absolute;
+    left: 0px;
+    opacity: 0.9;
+    z-index: -1;
+}
+
 /* work end */
 
-.work .work-content{
-    margin-top: 40px;
+/* feedback start */
+
+.feedback{
+    background-image: linear-gradient(180deg, #c73e3e00 0%, #080a1070 100%);
+    padding: 100px 0;
+    position: relative;
 }
+
+.feedback .title{
+    text-align: center;
+    padding: 20px;
+}
+
+.feedback .title h2{
+    font-size: var(--fs-44);
+    font-weight: var(--fw-500);
+    padding-bottom: 20px;
+}
+
+.feedback .title h2 .clip{
+    background-image: var(--primary-color);
+    background-clip: text;
+}
+
+.feedback .title h2 .clip span{
+    color: transparent;
+}
+
+.feedback .title p{
+    color: #A9A4ABC7;
+}
+
+.feedback .title p span{
+    color: var(--white-color);
+}
+
+.feedback-box{
+    width: 540px;
+    height: 270px;
+    padding: 35px;
+    border-radius: 40px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.feedback-content a{
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.feedback-content a img{
+    width: 20px;
+}
+
+.feedback-content .img img{
+    width: 45px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 550px;
+    bottom: 150px;
+}
+
+.feedback-content p{
+    color: var(--white-color);
+    font-family: var(--Lexend-Deca);
+    font-size: var(--fs-22);
+    font-weight: var(--fw-300);
+}
+
+.feedback-content h5{
+    padding-top: 20px;
+    color: #A9A4AB;
+    font-size: var(--fs-22);
+    font-weight: var(--fw-300);
+}
+
+.feedback-content h6{
+    padding-top: 3px;
+    color: #A9A4AB66;
+    font-size: var(--fs-16);
+    font-weight: var(--fw-600);
+}
+
+.feedback-color{
+    background: linear-gradient(180deg, #7E82992E 0%, #7E829900 100%);
+}
+
+/* feedback end */
 
 /* footer start */
 
