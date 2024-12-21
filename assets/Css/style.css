@@ -275,6 +275,11 @@ header .menu ul li:hover .drop-down{
     font-weight: var(--fw-500);
     font-family: var(--Lexend-Deca);
     box-shadow: 19px 20px 60px 0px rgba(255, 165.99999999999991, 83.99999999999999, 0);
+    transition: 0.5s;
+}
+
+.banner .banner-content a:hover{
+    transform: translateY(-20px);
 }
 
 .banner .banner-content h1 .clip, .service h1 .clip, .seo .title .clip span{
@@ -304,11 +309,12 @@ header .menu ul li:hover .drop-down{
     margin-top: 0;
 }
 
-.banner .banner-content .star{
+.banner .banner-content .star img{
     position: absolute;
     top: 40px;
     left: 90%;
     width: 40px;
+    animation: rotate 8s infinite linear;
 }
 
 .count{
@@ -359,7 +365,7 @@ header .menu ul li:hover .drop-down{
 }
 
 .service-box{
-    height: 150px;
+    height: 180px;
     padding: 10px;
     border-radius: 40px;
     margin-top: 20px;
@@ -370,24 +376,26 @@ header .menu ul li:hover .drop-down{
 }
 
 .service-content p{
-    text-align: left;
     color: #A9A4ABC7;
-    font-family: "Lexend", Sans-serif;
+    font-family: var(--Lexend-Deca);
     font-size: 18px;
     font-weight: 300;
     line-height: 1.2;
+    padding-bottom: 30px;
 }
 
 .service-content p span{
     color: var(--white-color);
-
 }
 
 .service-box{
     padding: 30px;
     border-radius: 40px;
     margin-top: 10px;
-    
+}
+
+.service .service-box img{
+    width: 50px;
 }
 
 .px-0{
@@ -417,7 +425,7 @@ header .menu ul li:hover .drop-down{
     font-size: 40px;
     font-weight: 800;
     line-height: 1.2;
-
+    padding-top: 100px;
 }
 
 .research .research-content p{
@@ -444,6 +452,11 @@ header .menu ul li:hover .drop-down{
     font-weight: var(--fw-500);
     font-family: var(--Lexend-Deca);
     box-shadow: 19px 20px 60px 0px rgba(255, 165.99999999999991, 83.99999999999999, 0);
+    transition: 0.5s;
+}
+
+.research .research-content a:hover{
+    transform: translateY(-20px);
 }
 
 .research .research-content h1 .clip{
@@ -467,6 +480,11 @@ header .menu ul li:hover .drop-down{
     opacity: 0.4;
 }
 
+.research .research-overlay2{
+    background-image: linear-gradient(180deg, #080A10 0%, #080A1000 100%);
+    opacity: 1;
+}
+
 .research .research-image img{
     margin-top: 0;
 }
@@ -476,6 +494,7 @@ header .menu ul li:hover .drop-down{
     bottom: 400px;
     left: 90%;
     width: 40px;
+    animation: rotate 8s infinite linear;
 }
 
 /* research end */
@@ -528,6 +547,7 @@ header .menu ul li:hover .drop-down{
     top: 20px;
     left: 700px;
     width: 40px;
+    animation: rotate 8s infinite linear;
 }
 
 .seo .seo-cart{
@@ -562,18 +582,20 @@ header .menu ul li:hover .drop-down{
 .award{
     position: relative;
     padding-bottom: 120px;
+    overflow-x: hidden;
 }
 
 .award .award-overlay{
     background-image: url(../Images/oval-2.png);
     width: 100%;
     height: 100%;
-    background-size: 50% auto;
+    /* margin-left: 500px; */
+    background-size: 45% auto;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 75% 20%;
     position: absolute;
-    bottom: 50px;
-    left: 300px;
+    /* bottom: 50px;
+    left: 300px; */
     opacity: 0.4;
     z-index: -1;
 }
@@ -610,7 +632,7 @@ header .menu ul li:hover .drop-down{
     padding-top: 30px;
 }
 
-.award .award-content p span{
+.award .award-content p span, .people p{
     color: var(--white-color);
 }
 
@@ -627,6 +649,36 @@ header .menu ul li:hover .drop-down{
     right: 260px;
     bottom: 120px;
     width: 130px;
+    animation: rotate 8s infinite linear;
+}
+
+.award .award-image .rotate{
+    position: absolute;
+    background-image: url(../Images/star.png);
+    border-radius: 50%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    border: 22px solid #EDB451;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-color: #EDB451;
+    bottom: 90px;
+    right: 250px;
+    animation: rotate 8s infinite linear;
+}
+
+.award-image svg{
+    width: 90px;
+    height: 90px;
+    overflow: visible;
+    word-spacing: 16px;
+    font-size: 40px;
+}
+
+.award-image svg path{
+    fill: transparent;
 }
 
 /* seo-agency-end */
@@ -641,11 +693,12 @@ header .menu ul li:hover .drop-down{
     background-color: #080811;
 }
 
-.company .col-1 img{
-    width: 100%;
+.company img{
+    width: 100px;
 }
 
-.company .row{
+.company .row img{
+    margin-right: 50px;
     padding: 10px;
     align-items: center;
 }
@@ -692,6 +745,7 @@ header .menu ul li:hover .drop-down{
     top: 190px;
     right: 150px;
     width: 40px;
+    animation: rotate 8s infinite linear;
 }
 
 .work .work-content p{
@@ -727,8 +781,9 @@ header .menu ul li:hover .drop-down{
     background-repeat: no-repeat;
     background-position: 50% 10%;
     position: absolute;
-    left: 0px;
-    opacity: 0.9;
+    /* left: 0px; */
+    /* top: 300px; */
+    opacity: 0.3;
     z-index: -1;
 }
 
@@ -779,25 +834,23 @@ header .menu ul li:hover .drop-down{
     display: inline-block;
 }
 
-.feedback-content a{
-    display: inline-block;
+.feedback-content{
+    padding-top: 15px;
+}
+
+.feedback-box i{
+    width: 20px;
     padding-bottom: 20px;
 }
 
-.feedback-content a img{
-    width: 20px;
-}
-
-.feedback-content .img img{
+.feedback-image img{
     width: 45px;
     border-radius: 50%;
     display: inline-block;
-    position: absolute;
-    left: 550px;
-    bottom: 150px;
+    
 }
 
-.feedback-content p{
+.feedback-box p{
     color: var(--white-color);
     font-family: var(--Lexend-Deca);
     font-size: var(--fs-22);
@@ -820,6 +873,63 @@ header .menu ul li:hover .drop-down{
 
 .feedback-color{
     background: linear-gradient(180deg, #7E82992E 0%, #7E829900 100%);
+}
+
+.feedback .feedback-overlay{
+    background-image: url(../Images/banner-background2.png);
+    background-color: rgba(0, 0, 0, 0.121);
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-position: 50% 50%;
+    opacity: 0.4;
+}
+
+.campaign{
+    position: relative;
+    padding-top: 180px;
+}
+
+.campaign .title h2{
+    font-size: var(--fs-44);
+    font-weight: var(--fw-300);
+}
+.campaign .title .clip{
+    display: inline;
+}
+
+.campaign .title a{
+    padding: 15px 40px;
+    background: var(--primary-color);
+    display: inline-block;
+    border-radius: 50px;
+    color: #000;
+    font-size: var(--fs-18);
+    font-weight: var(--fw-500);
+    font-family: var(--Lexend-Deca);
+    box-shadow: 19px 20px 60px 0px rgba(255, 165.99999999999991, 83.99999999999999, 0);
+    transition: 0.5s;
+}
+
+.campaign .title a:hover{
+    transform: translateY(-20px);
+}
+
+.campaign .title p{
+    color: #A9A4ABC7;
+    padding-bottom: 30px;
+}
+
+.campaign .title .star img{
+    width: 40px;
+    position: absolute;
+    right: 340px;
+    bottom: 140px;
+    animation: rotate 8s infinite linear;
 }
 
 /* feedback end */
@@ -860,3 +970,14 @@ header .menu ul li:hover .drop-down{
 }
 
 /* footer end */
+
+@keyframes rotate{
+    0%{
+        transform: rotate(-0deg);
+    }
+    75%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(-0deg);
+    }
