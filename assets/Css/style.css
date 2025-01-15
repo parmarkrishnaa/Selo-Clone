@@ -1008,18 +1008,16 @@ header .menu ul li:hover .drop-down {
 .footer-start h2 {
     font-family: var(--Lexend-Deca);
     font-size: var(--fs-24);
-    text-align: left;
     margin-bottom: 10px;
 }
 
 .footer-start p {
     font-size: var(--fs-18);
     font-weight: var(--fw-400);
-    text-align: left;
     color: var(--white-color);
 }
 
-.footer-end .copy-right p {
+.footer-end p {
     color: var(--dark-color);
 }
 
