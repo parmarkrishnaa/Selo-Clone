@@ -238,6 +238,10 @@ header .menu ul li:hover .drop-down {
     top: 63px;
 }
 
+.d-none{
+    display: none;
+}
+
 /* header end */
 
 /* banner start */
@@ -449,7 +453,7 @@ header .menu ul li:hover .drop-down {
 
 .research .research-content h1 {
     font-family: var(--Lexend-Deca);
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 800;
     line-height: 1.2;
     padding-top: 100px;
@@ -459,7 +463,7 @@ header .menu ul li:hover .drop-down {
     text-align: left;
     color: #A9A4ABC7;
     font-family: var(--Lexend-Deca);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 1.2;
     margin: 30px 0px 30px 0px;
@@ -1005,8 +1009,8 @@ header .menu ul li:hover .drop-down {
     font-size: var(--fs-24);
   }
   .footer p {
-    font-size: var(--fs-24);
-    font-weight: var(--fw-400);
+    font-size: var(--fs-22);
+    font-weight: var(--fw-300);
   }
   
   .selo-footer .footer-nav {

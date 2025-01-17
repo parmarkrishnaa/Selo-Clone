@@ -172,6 +172,11 @@
   .banner .banner-content {
     padding: 50px 20px;
   }
+
+  .d-lg-flex{
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -238,10 +243,6 @@
   .justify-xl-end{
     justify-content: flex-end;
   }
-
-  .justify-xl-center{
-    justify-content: center;
-  }
 }
 
 @media (min-width: 1400px) {
@@ -295,5 +296,14 @@
 
   .container {
     width: 1320px;
+  }
+
+  .d-xxl-flex{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .d-xxl-none{
+    display: none;
   }
 }
