@@ -264,7 +264,7 @@ header .menu ul li:hover .drop-down {
     font-size: var(--fs-64);
     font-family: var(--lexend-deca);
     line-height: 1.2;
-    font-weight: var(--fw-600);
+    font-weight: var(--fw-400);
 }
 
 .banner .banner-content p {
@@ -332,7 +332,7 @@ header .menu ul li:hover .drop-down {
 
 .banner .banner-content .star img {
     position: absolute;
-    top: 40px;
+    top: -10px;
     left: 90%;
     width: 40px;
     animation: rotate 8s infinite linear;
